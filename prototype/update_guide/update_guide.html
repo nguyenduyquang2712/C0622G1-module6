@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm Hướng Dẫn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="update_guide.css">
+
+
+</head>
+<body>
+<div class="container ">
+    <h3 class="center"> Chỉnh Sửa Hướng Dẫn</h3>
+    <div class="guide w-50" style=" box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.35);">
+        <form id="guideform" name="guide" method="post" action="#">
+            <div class="row">
+                <label for="title" class="form-label">Chủ đề (<span style="color: red">*</span>)</label>
+                <input id="title" type="text" value="Hướng dẫn đấu giá trên web &$^" class="form-control">
+                <span style="color: red">*Tên chủ đề không được chứa ký tự đặc biệt</span>
+            </div>
+
+            <div class="row">
+                <label for="floatingTextarea">Nội dung (<span style="color: red">*</span>)</label>
+
+                <textarea class="form-control" rows="7"  placeholder="Leave a content here"
+                          id="floatingTextarea"> Việc trả giá trong trường hợp đấu giá theo phương thức trả giá lên được thực hiện như sau: khi đấu giá viên yêu cầu người tham gia đấu giá thực hiện việc trả giá thì người tham gia đấu giá lúc này bắt đầu trả giá. Giá trả của người tham gia đấu giá phải ít nhất bằng giá khởi điểm trong trường hợp công khai giá khởi điểm. Người trả giá sau phải trả giá cao hơn giá mà người trả giá trước liền kề đã trả trong buổi đấu giá;</textarea>
+            </div>
+
+            <div class="row">
+                <label for="formFile" class="form-label">Chọn hình ảnh</label>
+                <input class="form-control" type="file" id="formFile" value="lgkgg.pmg">
+            </div>
+            <div class="center">
+                <button class="btn btn-primary w-100">
+                    Sửa Hướng dẫn
+                </button>
+            </div>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
